@@ -69,18 +69,12 @@ int main(void){
         }
     }
 
-    while(1){
-        int n =0;
-        for(int i =0; i<5; i++){
-            for(int j =0; j<5; j++)
-                if(tmp[i] == human[j].total){
-                    n++;
-                    printf("이름: %s, 총점: %d, 평균: %d, 학점: %s \n",human[j].name,human[j].total,human[j].mean,human[j].grade);
-                }
-                else
-                    continue;
-        }
-        if(n==5)
-            break;
+    for(int i =0; i<5; i++){
+        for(int j =0; j<5; j++)
+            if(tmp[i] == human[j].total){
+                printf("이름: %s, 총점: %d, 평균: %d, 학점: %s \n",human[j].name,human[j].total,human[j].mean,human[j].grade);
+            }
+            else
+                continue;
     }
 }
